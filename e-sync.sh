@@ -4,50 +4,48 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 if [ -z "$1" ]; then
-	echo "${RED}Error:${NC} Action is not specified."
-	echo ""
+	printf "${RED}Error:${NC} Action is not specified.\n\n"
 	exit 1
 fi
 
 if [ "$1" == "push" ] && [ -z "$2" ]; then
-	echo "${RED}Error:${NC} Source is not provided."
-	echo ""
+	printf "${RED}Error:${NC} Source is not provided.\n\n"
 	exit 1
 fi
 
 action="$1"
 source="$2"
 
+divider() {
+	printf "**********\n"
+}
+
 push() {
 	if [ ! -e ~/"$source" ]; then
-		echo "${RED}Error:${NC} Source '$source' is not found."
-		echo ""
-		exit 1
+		printf "${RED}Error:${NC} Source '$source' is not found.\n\n"
 	fi
 	mkdir -p ~/c-piscine-14/$source
 	cp -r ~/$source/* ~/c-piscine-14/$source
 	if [ $? -eq 0 ]; then
-		echo "${YELLOW}Source '$source' copied.${NC}"
+		printf "${YELLOW}Source '$source' copied.${NC}\n"
 	fi
 	rm -rf ~/c-piscine-14/$source/.git
 	if [ $? -eq 0 ]; then
-		echo "${YELLOW}.git from '$source' removed.${NC}"
+		printf "${YELLOW}.git from '$source' removed.${NC}\n"
 	fi
-	echo ""
+	divider
 	git add .
 	git commit -m "Push: '$source'"
-	echo ""
+	divider
 	git push
-	echo ""
-	echo "${GREEN}ESNYC:${NC} Pushed source '$source'."
-	echo ""
+	divider
+	printf "${GREEN}ESNYC:${NC} Pushed source '$source'.\n"
 }
 
 pull() {
 	git pull
-	echo ""
-	echo "${GREEN}ESYNC:${NC} Pulled."
-	echo ""
+	divider
+	printf "${GREEN}ESYNC:${NC} Pulled.\n"
 }
 
 if [ "$action" == "push" ]; then
@@ -55,7 +53,6 @@ if [ "$action" == "push" ]; then
 elif [ "$action" == "pull" ]; then
 	pull
 else
-	echo "${RED}Error:${NC} Invalid action."
-	echo ""
+	printf "${RED}Error:${NC} Invalid action.\n"
 	exit 1
 fi
