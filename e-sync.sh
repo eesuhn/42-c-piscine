@@ -55,6 +55,6 @@ if [ "$action" == "push" ]; then
 elif [ "$action" == "pull" ]; then
 	pull
 else
-	printf "${RED}Error:${NC} Invalid action.\n"
+	printf "${RED}Error:${NC} Invalid action.\n\n"
 	exit 1
 fi
