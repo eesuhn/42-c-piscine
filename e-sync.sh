@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-if [ -z "$2" ]; then
+if [ "$1" == "push" ] && [ -z "$2" ]; then
 	echo -e "${RED}Error:${NC} Source is not provided.\n"
 	exit 1
 fi
