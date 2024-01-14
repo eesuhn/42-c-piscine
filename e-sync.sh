@@ -30,17 +30,18 @@ push() {
 	if [ $? -eq 0 ]; then
 		echo -e "${YELLOW}.git from '$source' removed.${NC}"
 	fi
-	echo -e ""
+	echo ""
 	git add .
 	git commit -m "Push: '$source'"
-	echo -e ""
+	echo ""
 	git push
 	echo -e "\n${GREEN}ESNYC:${NC} Pushed source '$source'."
 }
 
 pull() {
 	git pull
-	echo -e "\n${GREEN}ESYNC:${NC} Pulled.\n"
+	echo ""
+	echo "${GREEN}ESYNC:${NC} Pulled.\n"
 }
 
 if [ "$action" == "push" ]; then
