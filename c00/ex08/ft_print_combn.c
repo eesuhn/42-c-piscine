@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 13:59:10 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/13 22:24:50 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/14 13:03:20 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ void	ft_print_combn(int n)
 	int	num_arr[9];
 	int	i;
 
+	// hello
 	ft_set_max_num_arr(num_arr, n);
 }
 
