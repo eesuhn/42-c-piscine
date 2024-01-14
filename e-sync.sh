@@ -17,7 +17,7 @@ action="$1"
 source="$2"
 
 divider() {
-	printf "**********\n"
+	printf "----------\n"
 }
 
 push() {
