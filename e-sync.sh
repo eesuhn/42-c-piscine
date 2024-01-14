@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-if [ "$1" == "push" ] && [ -z "$2" ]; then
+if [ -z "$2" ]; then
 	printf "${RED}Error:${NC} Source is not provided.\n\n"
 	exit 1
 fi
@@ -25,6 +25,7 @@ divider() {
 push() {
 	if [ ! -e ~/"$source" ]; then
 		printf "${RED}Error:${NC} Source '$source' is not found.\n\n"
+		exit 1
 	fi
 	mkdir -p ~/c-piscine-14/$source
 	cp -r ~/$source/* ~/c-piscine-14/$source
@@ -46,6 +47,15 @@ push() {
 
 pull() {
 	git pull
+	if [ ! -e ~/c-piscine-14/"$source" ]; then
+		printf "${RED}Error:${NC} Source '$source' is not found.\n\n"
+		exit 1
+	fi
+	mkdir -p ~/$source
+	cp -r ~/c-piscine-14/$source ~/$source
+	if [ $? -eq 0 ]; then
+		printf "${YELLOW}Source '$source' copied.&{NC}\n"
+	fi
 	divider
 	printf "${GREEN}ESYNC:${NC} Pulled.\n"
 }
