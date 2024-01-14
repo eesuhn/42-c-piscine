@@ -2,7 +2,8 @@
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
-NC='\033[0m'
+PURPLE=$(tput setaf 5)
+NC=$(tput sgr0)
 
 if [ -z "$1" ]; then
 	printf "${RED}Error:${NC} Action is not specified.\n\n"
@@ -18,9 +19,7 @@ action="$1"
 source="$2"
 
 divider() {
-	echo ""
-	echo "----------"
-	echo ""
+	echo "${PURPLE}----------${NC}"
 }
 
 push() {
