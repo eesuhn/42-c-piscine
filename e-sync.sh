@@ -1,3 +1,4 @@
+#!/bin/bash
 RED='\033[0;31m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
@@ -17,7 +18,8 @@ action="$1"
 source="$2"
 
 divider() {
-	printf "----------\n"
+	echo "----------"
+	echo ""
 }
 
 push() {
