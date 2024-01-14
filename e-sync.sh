@@ -19,7 +19,6 @@ source="$2"
 
 divider() {
 	echo "----------"
-	echo ""
 }
 
 push() {
