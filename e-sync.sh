@@ -18,7 +18,9 @@ action="$1"
 source="$2"
 
 divider() {
+	echo ""
 	echo "----------"
+	echo ""
 }
 
 push() {
