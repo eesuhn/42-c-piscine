@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:08:49 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/15 16:53:56 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/15 19:38:13 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,10 @@ void	ft_print_comb(void)
 	}
 }
 
+/*
 int	main(void)
 {
 	ft_print_comb();
 	return (0);
 }
+*/
