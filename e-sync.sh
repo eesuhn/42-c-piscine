@@ -47,6 +47,7 @@ push() {
 
 pull() {
 	git pull
+	divider
 	if [ ! -e ~/c-piscine-14/"$source" ]; then
 		printf "${RED}Error:${NC} Source '$source' is not found.\n\n"
 		exit 1
