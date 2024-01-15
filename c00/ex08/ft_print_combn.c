@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 13:59:10 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/15 16:18:33 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/15 18:06:19 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,6 @@ void	ft_set_max_num_arr(int max_num_arr[], int n)
 
 void	ft_helper(int *ptr)
 {
-	int	num;
-
-	printf("Hello World\n");
-	// num = *ptr - 1;
-	// *ptr = *ptr - 1;
 	*ptr -= 1;
 }
 
@@ -44,7 +39,7 @@ void	ft_print_combn(int n)
 	int	*ptr;
 
 	ft_set_max_num_arr(max_num_arr, n);
-	ptr = &n;	
+	ptr = &n;
 	while (n > 0)
 	{
 		ft_helper(ptr);
@@ -53,6 +48,6 @@ void	ft_print_combn(int n)
 
 int	main(void)
 {
-	ft_print_combn(4);
+	ft_print_combn(3);
 	return (0);
 }
