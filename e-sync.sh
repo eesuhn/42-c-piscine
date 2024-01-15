@@ -38,9 +38,9 @@ push() {
 	fi
 	divider
 	git add .
-	git commit -m "Push: '$source'"
+	#git commit -m "Push: '$source'"
 	divider
-	git push
+	#git push
 	divider
 	printf "${GREEN}ESNYC:${NC} Pushed source '$source'.\n"
 }
@@ -52,7 +52,10 @@ pull() {
 		printf "${RED}Error:${NC} Source '$source' is not found.\n\n"
 		exit 1
 	fi
-	mkdir -p ~/$source
+	if [ ! -d ~/"$source" ]; then
+		mkdir -p ~/$source
+		printf "${YELLOW}Directory '$source' created.${NC}\n"
+	fi
 	cp -r ~/c-piscine-14/$source ~/$source
 	if [ $? -eq 0 ]; then
 		printf "${YELLOW}Source '$source' copied.${NC}\n"
