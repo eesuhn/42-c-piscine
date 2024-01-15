@@ -55,7 +55,7 @@ pull() {
 	mkdir -p ~/$source
 	cp -r ~/c-piscine-14/$source ~/$source
 	if [ $? -eq 0 ]; then
-		printf "${YELLOW}Source '$source' copied.&{NC}\n"
+		printf "${YELLOW}Source '$source' copied.${NC}\n"
 	fi
 	divider
 	printf "${GREEN}ESYNC:${NC} Pulled.\n"
