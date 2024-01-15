@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 13:59:10 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/13 22:24:50 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/15 15:46:29 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void	ft_set_max_num_arr(int max_num_arr[], int n)
 		num_arr[i] = i;
 		i++;
 	}
-	i = 0;
 	start = 10 - n;
+	i = 0;
 	while (i <= n)
 	{
 		max_num_arr[i] = start;
@@ -36,10 +36,9 @@ void	ft_set_max_num_arr(int max_num_arr[], int n)
 
 void	ft_print_combn(int n)
 {
-	int	num_arr[9];
-	int	i;
+	int	max_num_arr[9];
 
-	ft_set_max_num_arr(num_arr, n);
+	ft_set_max_num_arr(max_num_arr, n);
 }
 
 int	main(void)
