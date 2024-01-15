@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 13:59:10 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/15 19:49:21 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/15 20:53:15 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,17 @@ void	ft_print_combn(int n)
 {
 	int	num_arr[9];
 
+	if (n <= 0 || n >= 10)
+	{
+		return ;
+	}
 	ft_combn(n, 0, num_arr, 0);
 }
 
 /*
 int	main(void)
 {
-	ft_print_combn(4);
+	ft_print_combn(3);
 	return (0);
 }
 */
