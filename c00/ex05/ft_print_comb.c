@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:08:49 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/15 19:38:13 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/16 15:06:50 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_print_comb(void)
 			while (val3 <= 9)
 			{
 				ft_print_nums(val1, val2, val3);
-				if (!(val1 == 7 && val2 == 8 && val3 == 9))
+				if (!(val1 == 7))
 				{
 					write(1, ", ", 2);
 				}
