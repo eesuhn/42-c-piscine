@@ -6,11 +6,11 @@
 /*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 13:14:06 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/12 13:14:13 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/16 16:13:02 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	char	*ptr;
 
