@@ -9,7 +9,6 @@ if [ -z "$1" ]; then
 	printf "${RED}Error:${NC} Action is not specified.\n\n"
 	exit 1
 fi
-
 if [ -z "$2" ]; then
 	printf "${RED}Error:${NC} Source is not provided.\n\n"
 	exit 1
