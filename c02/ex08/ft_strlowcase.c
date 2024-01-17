@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
+/*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/16 18:32:44 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/17 17:35:23 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/17 17:36:36 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/17 17:36:59 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	char	*ptr;
 
 	ptr = str;
 	while (*str != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
+		if (*str >= 'A' && *str <= 'Z')
 		{
-			*str -= 32;
+			*str += 32;
 		}
 		str++;
 	}
