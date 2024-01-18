@@ -6,21 +6,9 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 15:32:07 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/18 19:42:18 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/18 21:13:54 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_strlen(char *str)
-{
-	char	*ptr;
-
-	ptr = str;
-	while (*ptr)
-	{
-		ptr++;
-	}
-	return (ptr - str);
-}
 
 int	ft_strcmp(char *s1, char *s2)
 {
