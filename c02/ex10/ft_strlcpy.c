@@ -6,12 +6,9 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 11:05:09 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/18 12:30:16 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/18 18:47:14 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// #include <stdio.h>
-// #include <string.h>
 
 int	ft_strlen(char *str)
 {
@@ -40,31 +37,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		src++;
 		dest++;
 		i++;
-		if (*src)
-			*dest = '\0';
 	}
+	*dest = '\0';
 	return (size_src);
 }
-
-/*
-int	main(int argc, char *argv[])
-{
-	char	dest[5];
-	char	*src = argv[1];
-	size_t	copied;
-
-	
-	copied = strlcpy(dest, src, sizeof(dest));
-	printf("Source: %s\n", src);
-	printf("Size: %lu\n", sizeof(dest));
-	printf("Copied string: %s\n", dest);
-	printf("strlcpy: %zu\n", copied);
-	
-	copied = ft_strlcpy(dest, src, sizeof(dest));
-	printf("Source: %s\n", src);
-	printf("Size: %lu\n", sizeof(dest));
-	printf("Copied string: %s\n", dest);
-	printf("strlcpy: %zu\n", copied);
-	return (0);
-}
-*/
