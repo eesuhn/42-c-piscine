@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/19 11:27:42 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 12:08:47 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/19 12:55:27 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/19 13:00:46 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
-
-int	main(void)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	char			*s1;
-	char			*s2;
-	unsigned int	n;
+	char				*tmp;
+	unsigned int		i;
 
-	s1 = "abc";
-	s2 = "abd";
-	n = 2;
-	printf("%i\n", ft_strncmp(s1, s2, n));
-	return (0);
+	tmp = dest;
+	i = 0;
+	while (*dest)
+		dest++;
+	while (i < nb && (*src))
+	{
+		*dest = *src;
+		dest++;
+		src++;
+		i++;
+	}
+	*dest = '\0';
+	return (tmp);
 }

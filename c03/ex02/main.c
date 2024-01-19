@@ -5,25 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/19 11:27:42 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 12:08:47 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/19 12:11:20 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/19 12:17:20 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+char	*ft_strcat(char *dest, char *src);
 
 int	main(void)
 {
-	char			*s1;
-	char			*s2;
-	unsigned int	n;
+	char	dest[12];
+	char	*src;
 
-	s1 = "abc";
-	s2 = "abd";
-	n = 2;
-	printf("%i\n", ft_strncmp(s1, s2, n));
+	strcpy(dest, "hello");
+	src = " world";
+	printf("%s\n", ft_strcat(dest, src));
 	return (0);
 }

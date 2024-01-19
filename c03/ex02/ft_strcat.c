@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/19 11:27:42 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 12:08:47 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/19 12:10:30 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/19 12:14:29 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
-
-int	main(void)
+char	*ft_strcat(char *dest, char *src)
 {
-	char			*s1;
-	char			*s2;
-	unsigned int	n;
+	char	*tmp;
 
-	s1 = "abc";
-	s2 = "abd";
-	n = 2;
-	printf("%i\n", ft_strncmp(s1, s2, n));
-	return (0);
+	tmp = dest;
+	while (*dest)
+		dest++;
+	while (*src)
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (tmp);
 }
