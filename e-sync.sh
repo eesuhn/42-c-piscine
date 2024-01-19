@@ -13,7 +13,7 @@ if [ -z "$2" ]; then
 	printf "${RED}Error:${NC} Source is not provided.\n\n"
 	exit 1
 fi
-if [ "$1" == "push" ] && [ -z "&3" ]; then
+if [ "$1" == "push" ] && [ -z "$3" ]; then
 	printf "${RED}Error:${NC} Commit message is not provided.\n\n"
 	exit 1
 fi
