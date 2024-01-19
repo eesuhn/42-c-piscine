@@ -42,7 +42,7 @@ push() {
 	fi
 	divider
 	git add .
-	git commit -m "Push: '$source'" -m "$commit_msg"
+	git commit -m "Push: '$source': $commit_msg"
 	divider
 	git push
 	divider
