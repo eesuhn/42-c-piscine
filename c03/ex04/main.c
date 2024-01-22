@@ -5,27 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/18 15:32:24 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/22 21:24:38 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/19 13:02:31 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/19 13:24:57 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-int	ft_strcmp(char *s1, char *s2);
+char	*ft_strstr(char *str, char *to_find);
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
-	char	*str1;
-	char	*str2;
+	char	*str;
+	char	*to_find;
 
-	if (argc != 3)
-	{
-		return (0);
-	}
-	str1 = argv[1];
-	str2 = argv[2];
-	printf("%i\n", ft_strcmp(str1, str2));
+	str = "h hello";
+	to_find = "hello";
+	printf("%s\n", ft_strstr(str, to_find));
 	return (0);
 }

@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/18 15:32:24 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/22 21:24:38 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/19 13:02:04 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/19 13:24:20 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strcmp(char *s1, char *s2);
-
-int	main(int argc, char *argv[])
+char	*ft_strstr(char *str, char *to_find)
 {
-	char	*str1;
-	char	*str2;
+	int		i;
+	int		flag;
+	char	*find;
 
-	if (argc != 3)
+	find = to_find;
+	while (*str)
 	{
-		return (0);
+		if (*str == *to_find)
+		{
+			i = 0;
+			flag = 0;
+			while (to_find[i])
+			{
+				if (str[i] != to_find[i])
+					flag = 1;
+				i++;
+			}
+			if (flag == 0)
+				return (str);
+		}
+		str++;
 	}
-	str1 = argv[1];
-	str2 = argv[2];
-	printf("%i\n", ft_strcmp(str1, str2));
 	return (0);
 }
