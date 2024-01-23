@@ -6,11 +6,9 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 11:18:12 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/23 19:09:51 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/23 21:20:20 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 unsigned int	ft_strlen(char *str)
 {
