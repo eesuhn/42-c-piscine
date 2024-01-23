@@ -6,23 +6,25 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:10:30 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 12:14:29 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/23 17:57:20 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcat(char *dest, char *src)
 {
-	char	*tmp;
+	int	d;
+	int	s;
 
-	tmp = dest;
-	while (*dest)
-		dest++;
-	while (*src)
+	d = 0;
+	s = 0;
+	while (*(dest + d))
+		d++;
+	while (*(src + s))
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*(dest + d) = *(src + s);
+		d++;
+		s++;
 	}
-	*dest = '\0';
-	return (tmp);
+	*(dest + d) = '\0';
+	return (dest);
 }

@@ -6,26 +6,25 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:55:27 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 13:00:46 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/23 17:57:36 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	char				*tmp;
-	unsigned int		i;
+	unsigned int	d;
+	unsigned int	s;
 
-	tmp = dest;
-	i = 0;
-	while (*dest)
-		dest++;
-	while (i < nb && (*src))
+	d = 0;
+	s = 0;
+	while (*(dest + d))
+		d++;
+	while (s < nb && *(src + s))
 	{
-		*dest = *src;
-		dest++;
-		src++;
-		i++;
+		*(dest + d) = *(src + s);
+		d++;
+		s++;
 	}
-	*dest = '\0';
-	return (tmp);
+	*(dest + d) = '\0';
+	return (dest);
 }

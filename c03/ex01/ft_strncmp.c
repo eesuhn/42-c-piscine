@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 11:27:29 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 11:57:12 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/23 17:22:19 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while ((i < n) && (*s1 || *s2))
+	while (i < n && (*s1 || *s2))
 	{
 		if (*s1 != *s2)
 			return (*s1 - *s2);

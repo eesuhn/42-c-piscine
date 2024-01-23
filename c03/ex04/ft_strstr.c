@@ -6,33 +6,35 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 13:02:04 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/19 13:24:20 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/23 17:58:30 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	int		i;
-	int		flag;
-	char	*find;
+	int	s;
+	int	i;
+	int	flag;
 
-	find = to_find;
-	while (*str)
+	s = 0;
+	if (!(*to_find))
+		return (str);
+	while (*(str + s))
 	{
-		if (*str == *to_find)
+		if (*(str + s) == *to_find)
 		{
 			i = 0;
 			flag = 0;
 			while (to_find[i])
 			{
-				if (str[i] != to_find[i])
+				if (*(str + s + i) != to_find[i])
 					flag = 1;
 				i++;
 			}
 			if (flag == 0)
-				return (str);
+				return (str + s);
 		}
-		str++;
+		s++;
 	}
 	return (0);
 }
