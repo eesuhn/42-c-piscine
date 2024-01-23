@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yilim <yilim@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/19 13:30:58 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/23 21:26:20 by yilim            ###   ########.fr       */
+/*   Created: 2024/01/23 21:29:13 by yilim             #+#    #+#             */
+/*   Updated: 2024/01/23 21:33:11 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+void	ft_putnbr(int nb);
 
-	i = 0;
-	while (*(str + i))
-		i++;
-	return (i);
+int	main(void)
+{
+	int	nbr;
+
+	nbr = 12345;
+	ft_putnbr(nbr);
+	return (0);
 }
