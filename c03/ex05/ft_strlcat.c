@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 11:18:12 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/23 21:20:20 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/24 21:28:12 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,9 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	dest_len;
-	char			*tmp;
 
 	i = 0;
 	dest_len = 0;
-	tmp = dest;
 	while (*dest && dest_len < size)
 	{
 		dest++;
