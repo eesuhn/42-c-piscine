@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 16:08:35 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/24 17:40:26 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/24 21:10:57 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	ft_atoi_base(char *str, char *base)
 	{
 		i = ft_char_i(*str, base);
 		if (i == -1)
-			return (0);
+			break ;
 		res = res * ft_strlen(base) + i;
 		str++;
 	}
