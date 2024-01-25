@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 15:52:08 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/25 16:07:11 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/25 18:10:55 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(void)
 {
 	int	nb;
 
-	nb = 4;
+	nb = INT_MAX;
 	printf("%i\n", ft_is_prime(nb));
 	return (0);
 }
