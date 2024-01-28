@@ -12,30 +12,6 @@
 
 #include <stdlib.h>
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*(str + i))
-		i++;
-	return (i);
-}
-
-int	ft_char_i(char c, char *base)
-{
-	int	i;
-
-	i = 0;
-	while (*(base + i))
-	{
-		if (*(base + i) == c)
-			return (i);
-		i++;
-	}
-	return (-1);
-}
-
 int	ft_valid(char *base)
 {
 	int	i;
@@ -56,6 +32,47 @@ int	ft_valid(char *base)
 		i++;
 	}
 	return (i >= 2);
+}
+
+int	ft_char_i(char c, char *base)
+{
+	int	i;
+
+	i = 0;
+	while (*(base + i))
+	{
+		if (*(base + i) == c)
+			return (i);
+		i++;
+	}
+	return (-1);
+}
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (*(str + i))
+		i++;
+	return (i);
+}
+
+int	ft_numlen(int nbr, int negative)
+{
+	int	tmp;
+	int	len;
+
+	tmp = nbr;
+	len = 0;
+	if (negative)
+		len++;
+	while (tmp)
+	{
+		len++;
+		tmp /= 10;
+	}
+	return (len);
 }
 
 int	ft_atoi_base(char *str, char *base)

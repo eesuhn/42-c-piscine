@@ -15,10 +15,8 @@
 #include <unistd.h>
 
 char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
+char	*ft_itoa_base(int nbr, char *base);
 
-/*
- * res = -685
- */
 int	main(void)
 {
 	char	*nbr;
@@ -40,3 +38,19 @@ int	main(void)
 	}
 	return (0);
 }
+
+/*
+int	main(void)
+{
+	int		nbr;
+	char	*base;
+	char	*res;
+
+	nbr = -42;
+	base = "0123456789abcdef";
+	res = ft_itoa_base(nbr, base);
+	printf("%s\n", res);
+	free(res);
+	return (0);
+}
+*/

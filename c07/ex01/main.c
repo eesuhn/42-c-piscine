@@ -6,26 +6,24 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 11:37:04 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/26 12:13:33 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/28 17:49:28 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <stdio.h>
 
 int	*ft_range(int min, int max);
 
 void	ft_putarr(int *arr, int size)
 {
 	int		i;
-	char	c;
 
 	i = -1;
 	while (++i < size)
-	{
-		c = arr[i] + '0';
-		write(1, &c, 1);
-	}
+		printf("%i\n", arr[i]);
 }
 
 int	main(void)
@@ -34,8 +32,8 @@ int	main(void)
 	int	max;
 	int	*arr;
 
-	min = 2;
-	max = 6;
+	min = -2;
+	max = 3;
 	arr = ft_range(min, max);
 	ft_putarr(arr, (max - min));
 	free(arr);
