@@ -14,7 +14,6 @@
 #include <stdlib.h>
 
 char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
-char	*ft_itoa_base(int nbr, char *base);
 
 int	main(void)
 {
