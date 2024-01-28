@@ -22,6 +22,8 @@ int	ft_valid(char *base)
 	{
 		if (*(base + i) == '+' || *(base + i) == '-')
 			return (0);
+		if ((*(base + i) >= 9 && *(base + i) <= 13) || *(base + i) == 32)
+			return (0);
 		j = 0;
 		while (j < i)
 		{
@@ -32,20 +34,6 @@ int	ft_valid(char *base)
 		i++;
 	}
 	return (i >= 2);
-}
-
-int	ft_char_i(char c, char *base)
-{
-	int	i;
-
-	i = 0;
-	while (*(base + i))
-	{
-		if (*(base + i) == c)
-			return (i);
-		i++;
-	}
-	return (-1);
 }
 
 int	ft_strlen(char *str)
@@ -73,6 +61,20 @@ int	ft_numlen(int nbr, int negative)
 		tmp /= 10;
 	}
 	return (len);
+}
+
+int	ft_char_i(char c, char *base)
+{
+	int	i;
+
+	i = 0;
+	while (*(base + i))
+	{
+		if (*(base + i) == c)
+			return (i);
+		i++;
+	}
+	return (-1);
 }
 
 int	ft_atoi_base(char *str, char *base)

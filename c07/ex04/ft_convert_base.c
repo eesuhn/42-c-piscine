@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int		ft_valid(char *base);
 int		ft_strlen(char *str);
@@ -58,8 +57,9 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	int		temp;
 	char	*res;
 
+	if (!ft_valid(base_from) || !ft_valid(base_to))
+		return (NULL);
 	temp = ft_atoi_base(nbr, base_from);
 	res = ft_itoa_base(temp, base_to);
-	printf("%s\n", res);
-	return (0);
+	return (res);
 }
