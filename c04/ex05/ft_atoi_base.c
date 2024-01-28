@@ -44,6 +44,8 @@ int	ft_valid(char *base)
 	{
 		if (*(base + i) == '+' || *(base + i) == '-')
 			return (0);
+		if ((*(base + i) >= 9 && *(base + i) <= 13) || *(base + i) == 32)
+			return (0);
 		j = 0;
 		while (j < i)
 		{
