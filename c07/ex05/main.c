@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:31:23 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/29 15:10:46 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/29 15:11:55 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ int	main(void)
 
 	join = "hi12hi1hi2"; // Size = 3
 	charset = "123";
-	printf("%i\n", ft_size(join, charset));
-	// split = ft_split(join, charset);
+	// printf("%i\n", ft_size(join, charset));
+	split = ft_split(join, charset);
+	// ft_putarr(split);
 	return (0);
 }
