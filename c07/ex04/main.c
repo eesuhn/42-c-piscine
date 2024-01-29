@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/27 21:27:24 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/27 22:28:33 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/29 19:13:18 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int	main(void)
 	char	*base_to;
 	char	*res;
 
-	nbr = "-vn";
-	base_from = "poneyvif";
-	base_to = "0123456789ABCDEF";
+	nbr = "-42";
+	base_from = "0123456789";
+	base_to = "01";
 	res = ft_convert_base(nbr, base_from, base_to);
 	printf("%s\n", res);
 	return (0);

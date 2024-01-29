@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 20:31:23 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/29 15:11:55 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/29 19:00:35 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <stdlib.h>
 
 char	**ft_split(char *str, char *charset);
-int	ft_size(char *str, char *charset);
 
 void	ft_putarr(char	**arr)
 {
@@ -31,10 +30,9 @@ int	main(void)
 	char	*charset;
 	char	**split;
 
-	join = "hi12hi1hi2"; // Size = 3
-	charset = "123";
-	// printf("%i\n", ft_size(join, charset));
+	join = "abc,def0ghi,0jkl,hi";
+	charset = ",0";
 	split = ft_split(join, charset);
-	// ft_putarr(split);
+	ft_putarr(split);
 	return (0);
 }
