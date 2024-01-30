@@ -6,7 +6,7 @@
 /*   By: yilim <yilim@student.42KL.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 12:54:13 by yilim             #+#    #+#             */
-/*   Updated: 2024/01/27 19:20:21 by yilim            ###   ########.fr       */
+/*   Updated: 2024/01/29 21:28:13 by yilim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ int	ft_totallen(int size, char **strs, char *sep)
 	i = -1;
 	while (++i < size)
 	{
-		len += ft_strlen(strs[i]);
+		if (*(strs + i))
+			len += ft_strlen(strs[i]);
 		if (i < size - 1 && *sep)
 			len += ft_strlen(sep);
 	}
@@ -61,7 +62,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	char	*join;
 	int		i;
 
-	if (!size || !strs)
+	if (!size)
 	{
 		join = (char *) malloc(1);
 		join[0] = '\0';
@@ -69,6 +70,9 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	}
 	len = ft_totallen(size, strs, sep);
 	join = (char *) malloc(len + 1);
+	if (!join)
+		return (NULL);
+	join[0] = '\0';
 	i = 0;
 	ft_strcat(join, strs[i]);
 	while (++i < size)
