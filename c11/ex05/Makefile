@@ -16,4 +16,14 @@ all: $(NAME)
 	gcc $(CFLAGS) -c -I $(HEAD) $< -o $(<:.c=.o)
 
 $(NAME):	$(OBJS)
-	$
+	gcc $(CFLAGS) -o $(NAME) $(OBJS)
+
+clean:
+	$(RM) $(OBJS)
+
+fclean:		clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
