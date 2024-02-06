@@ -1,7 +1,7 @@
 # 42 Piscine
 
-Learned C in 26 days, from fundamentals to algorithms, data structures, and much more, all without the use of a standard library. <br>
-One of the best learning experiences. 
+<img src="https://github.com/eesuhn/c-piscine-14/assets/102596628/1c7ed51d-6afa-410b-ae89-92557236b064" alt="42 logo" width="30" /> <br>
+Learned C in 26 days, from fundamentals to algorithms, data structures, and much more, all without the use of standard library <br> 
 
 |          | Subject                 | Score       |
 | :------: | :---------------------: | :---------: |
@@ -16,3 +16,5 @@ One of the best learning experiences.
 | C08      | Struct & Header         | 100         |
 | C09      | Makefile                | 100         |
 | C11      | Function Pointer        | 100         |
+
+One of the best learning experiences
