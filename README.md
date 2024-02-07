@@ -1,4 +1,4 @@
-# 42 Piscine
+## 42 Piscine
 
 <img src="https://github.com/eesuhn/c-piscine-14/assets/102596628/1c7ed51d-6afa-410b-ae89-92557236b064" alt="42 logo" width="30" /> <br>
 Learned C in 26 days, from fundamentals to algorithms, data structures, and much more, all without the use of standard library <br> 
