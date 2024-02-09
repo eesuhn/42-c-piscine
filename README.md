@@ -17,4 +17,4 @@ Learned C in 26 days, from fundamentals to algorithms, data structures, and much
 | C09      | Makefile                | 100         |
 | C11      | Function Pointer        | 100         |
 
-One of the best learning experiences
+<i>One of the best learning experiences</i>
