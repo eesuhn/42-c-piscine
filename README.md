@@ -6,16 +6,16 @@ Learned C with [42KL](https://42kl.edu.my/) in 26 days, from fundamentals to alg
 
 |          | Subject                 | Score       |
 | :------: | :---------------------: | :---------: |
-| C00      | Introduction            | 100         |
-| C01      | Pointer                 | 100         |
-| C02      | String & Array          | 85          |
-| C03      | String Manipulation     | 100         |
-| C04      | Data Type Conversion    | 100         |
-| C05      | Recursion               | 80          |
-| C06      | Argc & Argv             | 100         |
-| C07      | Memory Alloction        | 100         |
-| C08      | Struct & Header         | 100         |
-| C09      | Makefile                | 100         |
-| C11      | Function Pointer        | 100         |
+| C00      | [Introduction](./c00/en.subject.pdf)            | 100         |
+| C01      | [Pointer](./c01/en.subject.pdf)                 | 100         |
+| C02      | [String & Array](./c02/en.subject.pdf)          | 85          |
+| C03      | [String Manipulation](./c03/en.subject.pdf)     | 100         |
+| C04      | [Data Type Conversion](./c04/en.subject.pdf)    | 100         |
+| C05      | [Recursion](./c05/en.subject.pdf)               | 80          |
+| C06      | [Argc & Argv](./c06/en.subject.pdf)             | 100         |
+| C07      | [Memory Alloction](./c07/en.subject.pdf)        | 100         |
+| C08      | [Struct & Header](./c08/en.subject.pdf)         | 100         |
+| C09      | [Makefile](./c09/en.subject.pdf)                | 100         |
+| C11      | [Function Pointer](./c11/en.subject.pdf)        | 100         |
 
 <i>One of the best learning experiences</i>
