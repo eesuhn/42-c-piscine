@@ -1,6 +1,6 @@
 ## 42 C Piscine
 
-<img src="https://github.com/eesuhn/c-piscine-14/assets/102596628/1c7ed51d-6afa-410b-ae89-92557236b064" alt="42 logo" width="30" />
+[<img src="https://github.com/eesuhn/c-piscine-14/assets/102596628/1c7ed51d-6afa-410b-ae89-92557236b064" alt="42 logo" width="30" />](https://42kl.edu.my/)
 
 Learned C with [42KL](https://42kl.edu.my/) in 26 days, from fundamentals to algorithms, data structures, and much more, all without the use of standard library <br> 
 
